@@ -15,15 +15,20 @@
 }
 
 .slides--text {
+  @include vert-align();
   position: absolute;
-  top: 50%;
-  z-index: 4;
+  z-index: 3;
+  width: 100%;
+  h1 {
+    text-align: center;
+    color: white;
+  }
 }
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
   z-index: 3;
-  top: 46%;
+  top: 48.5%;
   width: 100%;
 }
 .slides-navigation a {

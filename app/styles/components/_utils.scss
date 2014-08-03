@@ -91,6 +91,10 @@
 
 /*==========  MIXINS  ==========*/
 
+  @mixin vert-align() {
+    top: 50%;
+    transform: translateY(-50%);
+  }
   @mixin media-query($media-query) {
     @if $media-query == small {
       @media only screen and (max-width:$medium - 1) { @content; }
