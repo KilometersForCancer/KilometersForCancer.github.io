@@ -42,7 +42,7 @@ var AUTOPREFIXER_BROWSERS = [
 
 // Lint JavaScript
 gulp.task('jshint', function () {
-  return gulp.src(['!app/scripts/modernizr.custom.js', 'app/scripts/**/*.js'])
+  return gulp.src(['!app/scripts/libs/*.js', 'app/scripts/**/*.js'])
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))

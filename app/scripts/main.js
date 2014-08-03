@@ -20,7 +20,8 @@ $(function() {
   'use strict';
 
   $('#slides').superslides({
+    play: 5000,
     hashchange: true
   });
-  
+
 });
