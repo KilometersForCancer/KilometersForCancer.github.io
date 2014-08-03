@@ -11,42 +11,14 @@
 
 #slides {
   @include cf();
-  position: relative;
-  .slides__container {
-    display: none;
-  }
-  .scrollable {
-    @include cf();
-    position: relative;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    height: 100%;
-  }
+  // @include center;
 }
 
-#slides {
-  position: relative;
+.slides--text {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
 }
-#slides .slides-container {
-  display: none;
-}
-#slides .scrollable {
-  *zoom: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-}
-#slides .scrollable:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
@@ -57,10 +29,12 @@
 .slides-navigation a {
   position: absolute;
   display: block;
+
+  color: white;
 }
-.slides-navigation a.prev {
-  left: 0;
+.slides-navigation a.previous {
+  left: 10px;
 }
 .slides-navigation a.next {
-  right: 0;
+  right: 10px;
 }

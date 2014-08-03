@@ -31,3 +31,7 @@ pre {
 .col {
   @include center();
 }
+
+.margin {
+  margin-top: $margin;
+}

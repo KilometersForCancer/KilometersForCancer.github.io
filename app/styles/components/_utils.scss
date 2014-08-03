@@ -21,6 +21,9 @@
   $wideColWidth: 22.2% !default;
   $wideGutterWidth: 3.7% !default;
 
+  // Define margin
+  $margin: 3em;
+
   // Defining colors
   $colorBlue: #3372df !default;
   $colorBlueSecondary: lighten($colorBlue, 30%) !default;

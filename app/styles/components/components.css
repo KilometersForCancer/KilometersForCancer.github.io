@@ -463,6 +463,10 @@ pre {
   clear: both;
 }
 
+.margin {
+  margin-top: 3em;
+}
+
 @font-face {
   font-family: "icons";
   src: url("../../images/icons/icons.eot");
@@ -1787,7 +1791,6 @@ div.highlight > pre > code .il, code .highlight .il {
 **/
 #slides {
   *zoom: 1;
-  position: relative;
 }
 #slides:before, #slides:after {
   content: '';
@@ -1796,48 +1799,11 @@ div.highlight > pre > code .il, code .highlight .il {
 #slides:after {
   clear: both;
 }
-#slides .slides__container {
-  display: none;
-}
-#slides .scrollable {
-  *zoom: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-}
-#slides .scrollable:before, #slides .scrollable:after {
-  content: '';
-  display: table;
-}
-#slides .scrollable:after {
-  clear: both;
-}
 
-#slides {
-  position: relative;
-}
-
-#slides .slides-container {
-  display: none;
-}
-
-#slides .scrollable {
-  *zoom: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-}
-
-#slides .scrollable:after {
-  content: "";
-  display: table;
-  clear: both;
+.slides--text {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
 }
 
 .slides-navigation {
@@ -1851,14 +1817,23 @@ div.highlight > pre > code .il, code .highlight .il {
 .slides-navigation a {
   position: absolute;
   display: block;
+  color: white;
 }
 
-.slides-navigation a.prev {
-  left: 0;
+.slides-navigation a.previous {
+  left: 10px;
 }
 
 .slides-navigation a.next {
-  right: 0;
+  right: 10px;
+}
+
+.logo {
+  display: inline-block;
+  background: url("../../images/KforC.svg") no-repeat center center;
+  height: 200px;
+  width: 200px;
+  background-size: 200px 200px;
 }
 
 /**
