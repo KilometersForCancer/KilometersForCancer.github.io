@@ -418,25 +418,6 @@ body {
   /* 26px */
   font-weight: 300;
   color: #404040;
-  position: relative;
-}
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 9;
-  display: none;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 95%, rgba(0, 0, 0, 0.15) 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 95%, rgba(0, 0, 0, 0.15) 100%);
-  background-size: 100% 26px;
-}
-body.debug::after {
-  display: block;
-  pointer-events: none;
 }
 
 pre {
@@ -452,8 +433,8 @@ pre {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 3.7%;
+  padding-right: 3.7%;
 }
 .col:before, .col:after {
   content: '';
@@ -1811,6 +1792,8 @@ div.highlight > pre > code .il, code .highlight .il {
 .slides--text h1 {
   text-align: center;
   color: white;
+  max-width: 88%;
+  margin: 0 auto;
 }
 
 .slides-navigation {
@@ -1837,6 +1820,35 @@ div.highlight > pre > code .il, code .highlight .il {
 
 .logo {
   display: inline-block;
+  background: url("../../images/KforC.svg") no-repeat center center;
+  height: 200px;
+  width: 200px;
+  background-size: 200px 200px;
+}
+
+/**
+*
+* Contact styling
+*
+**/
+.contact__form {
+  font-size: 1.3em;
+}
+.contact__form input {
+  display: block;
+  color: #222222;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: white;
+}
+.contact__form input:focus, .contact__form input:active {
+  outline: none;
+}
+
+.about__logo {
+  float: right;
   background: url("../../images/KforC.svg") no-repeat center center;
   height: 200px;
   width: 200px;

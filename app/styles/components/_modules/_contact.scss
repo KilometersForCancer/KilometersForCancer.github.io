@@ -1,0 +1,23 @@
+/**
+*
+* Contact styling
+*
+**/
+
+.contact__form {
+  font-size: 1.3em;
+
+  input {
+    display: block;
+    color: $colorBlack;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: $colorWhite;
+
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+}

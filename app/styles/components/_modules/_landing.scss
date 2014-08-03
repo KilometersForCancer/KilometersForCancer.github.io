@@ -19,9 +19,12 @@
   position: absolute;
   z-index: 3;
   width: 100%;
+
   h1 {
     text-align: center;
     color: white;
+    max-width: 88%;
+    margin: 0 auto;
   }
 }
 .slides-navigation {
