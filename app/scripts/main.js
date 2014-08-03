@@ -18,4 +18,9 @@
  */
 $(function() {
   'use strict';
+
+  $('#slides').superslides({
+    hashchange: true
+  });
+  
 });
