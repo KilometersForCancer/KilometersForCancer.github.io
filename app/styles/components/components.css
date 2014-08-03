@@ -1797,36 +1797,16 @@ div.highlight > pre > code .il, code .highlight .il {
   clear: both;
 }
 
-.jcarousel {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-
-.jcarousel ul {
-  width: 20000em;
-  height: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.jcarousel li {
-  float: left;
-  width: 100%;
-  height: 100%;
-}
-
 /** Carousel **/
 .jcarousel {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 .jcarousel ul {
-  width: 20000em;
+  width: 1000%;
   position: relative;
   list-style: none;
   margin: 0;
@@ -1836,47 +1816,17 @@ div.highlight > pre > code .il, code .highlight .il {
 .jcarousel li {
   float: left;
   width: 100%;
-  height: 100%;
-}
-
-/** Carousel Controls **/
-.jcarousel-control-prev,
-.jcarousel-control-next {
-  position: absolute;
-  top: 200px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #4E443C;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 0 1px #000;
-  font: 24px/27px Arial, sans-serif;
-  border-radius: 30px;
-  box-shadow: 0 0 2px #999;
-}
-
-.jcarousel-control-prev {
-  left: -50px;
-}
-
-.jcarousel-control-next {
-  right: -50px;
-}
-
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-  display: block;
+  height: 400px;
 }
 
 .carousel--1 {
   list-style: none;
-  background: url("../../images/stock1.jpg") no-repeat fixed center;
+  background: url("../../images/stock1.jpg") fixed center;
 }
 
 .carousel--2 {
   list-style: none;
-  background: url("../../images/stock2.jpg") no-repeat fixed center;
+  background: url("../../images/stock2.jpg") fixed center;
 }
 
 /** Carousel Controls **/
@@ -1897,7 +1847,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .jcarousel-control-prev {
-  left: 0px;
+  left: 0;
 }
 
 .jcarousel-control-next {
