@@ -3,6 +3,20 @@
 * Contact styling
 *
 **/
+#contact {
+}
+
+.contact__map {
+  @include col(1/2);
+}
+
+.contact__content {
+  @include col(1/2);
+
+  h2 {
+    padding-bottom: 30px;
+  }
+}
 
 .contact__form {
   font-size: 1.3em;

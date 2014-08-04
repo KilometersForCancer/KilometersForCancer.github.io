@@ -418,6 +418,8 @@ body {
   /* 26px */
   font-weight: 300;
   color: #404040;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 pre {
@@ -1831,6 +1833,53 @@ div.highlight > pre > code .il, code .highlight .il {
 * Contact styling
 *
 **/
+.contact__map {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.contact__map:before, .contact__map:after {
+  content: '';
+  display: table;
+}
+.contact__map:after {
+  clear: both;
+}
+.contact__map:last-child {
+  margin-right: 0%;
+}
+
+.contact__content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.contact__content:before, .contact__content:after {
+  content: '';
+  display: table;
+}
+.contact__content:after {
+  clear: both;
+}
+.contact__content:last-child {
+  margin-right: 0%;
+}
+.contact__content h2 {
+  padding-bottom: 30px;
+}
+
 .contact__form {
   font-size: 1.3em;
 }
@@ -1853,6 +1902,10 @@ div.highlight > pre > code .il, code .highlight .il {
   height: 200px;
   width: 200px;
   background-size: 200px 200px;
+}
+
+footer {
+  margin-top: 8em;
 }
 
 /**
