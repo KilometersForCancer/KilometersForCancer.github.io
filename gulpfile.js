@@ -26,7 +26,6 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
-var server = require('gulp-express');
 var reload = browserSync.reload;
 
 var AUTOPREFIXER_BROWSERS = [
@@ -153,8 +152,16 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Watch Files For Changes & Reload
 gulp.task('serve', ['styles:components', 'styles:scss'], function () {
-  server.run({
-    file: 'server.js'
+  browserSync({
+    open: false,
+    notify: false,
+    // Run as an https by uncommenting 'https: true'
+    // Note: this uses an unsigned certificate which on first access
+    // will present a certificate warning in the browser.
+    // https: true,
+    server: {
+    baseDir: ['.tmp', 'app']
+    }
   });
 
   gulp.watch(['app/**/*.html'], reload);
@@ -166,8 +173,15 @@ gulp.task('serve', ['styles:components', 'styles:scss'], function () {
 
 // Build and serve the output from the dist build
 gulp.task('serve:dist', ['default'], function () {
-  server.run({
-    file: 'server.js'
+  browserSync({
+    notify: false,
+    // Run as an https by uncommenting 'https: true'
+    // Note: this uses an unsigned certificate which on first access
+    // will present a certificate warning in the browser.
+    // https: true,
+    server: {
+      baseDir: 'dist'
+    }
   });
 });
 
