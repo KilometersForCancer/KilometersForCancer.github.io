@@ -19,7 +19,6 @@ body {
   line-height: 1.6250em; /* 26px */
   font-weight: 300; // to thicken it a bit, we need to remove font-smoothing
   color: $colorText;
-  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -28,10 +27,18 @@ pre {
   padding: 13px;
 }
 
-.col {
-  @include center($pad: $wideGutterWidth);
-}
-
 .margin {
   margin-top: $margin;
+}
+
+@media only screen and (max-width: $wide) {
+  .col {
+    @include center($pad: $mediumGutterWidth);
+  }
+}
+
+@media only screen and (min-width: $wide) {
+  .col {
+    @include center($pad: $smallGutterWidth);
+  }
 }

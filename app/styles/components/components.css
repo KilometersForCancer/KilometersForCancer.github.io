@@ -418,7 +418,6 @@ body {
   /* 26px */
   font-weight: 300;
   color: #404040;
-  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -427,29 +426,50 @@ pre {
   padding: 13px;
 }
 
-.col {
-  *zoom: 1;
-  width: auto;
-  max-width: 1410px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 3.7%;
-  padding-right: 3.7%;
-}
-.col:before, .col:after {
-  content: '';
-  display: table;
-}
-.col:after {
-  clear: both;
-}
-
 .margin {
   margin-top: 3em;
 }
 
+@media only screen and (max-width: 800px) {
+  .col {
+    *zoom: 1;
+    width: auto;
+    max-width: 1410px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+  }
+  .col:before, .col:after {
+    content: '';
+    display: table;
+  }
+  .col:after {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .col {
+    *zoom: 1;
+    width: auto;
+    max-width: 1410px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .col:before, .col:after {
+    content: '';
+    display: table;
+  }
+  .col:after {
+    clear: both;
+  }
+}
 @font-face {
   font-family: "icons";
   src: url("../../images/icons/icons.eot");
@@ -664,7 +684,7 @@ pre {
 }
 
 .highlight-module__title {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 68px;
   font-weight: 300;
   line-height: 1.1471em;
@@ -675,7 +695,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 110px;
     font-weight: 300;
     line-height: 1.19em;
@@ -686,7 +706,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2381em;
@@ -697,7 +717,7 @@ pre {
 }
 @media only screen and (min-width: 800px) and (min-width: 800px) {
   .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -812,7 +832,7 @@ pre {
   padding: 0 0 26px;
 }
 .highlight-module--inline .highlight-module__title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.3000em;
   /* 26px */
@@ -821,8 +841,8 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .highlight-module--inline .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
-    font-size: 26px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
     font-weight: 300;
     line-height: 1.0000em;
     /* 26px */
@@ -1150,13 +1170,13 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .editorial-header__excerpt {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.3000em;
   /* 26px */
   padding-top: 1.3000em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .editorial-header .tag {
@@ -1164,7 +1184,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .editorial-header__subtitle {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 42px;
   font-weight: 300;
   line-height: 1.2381em;
@@ -1176,7 +1196,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 @media only screen and (min-width: 800px) {
   .editorial-header__subtitle {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -1205,7 +1225,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .editorial-header__toc-title {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 13px;
   padding-bottom: 13px !important;
@@ -1256,8 +1276,8 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .related-guides__title {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: 26px;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
   font-weight: 300;
   line-height: 1.0000em;
   /* 26px */
@@ -1267,7 +1287,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 @media only screen and (min-width: 800px) {
   .related-guides__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2381em;
@@ -1301,13 +1321,13 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .in-this-guide__title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.3000em;
   /* 26px */
   padding-top: 1.3000em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   margin-bottom: 26px;
 }
 
@@ -1324,7 +1344,7 @@ div.highlight > pre > code .il, code .highlight .il {
 
 .articles-count {
   color: #3372df;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -1445,7 +1465,7 @@ div.highlight > pre > code .il, code .highlight .il {
 **/
 .quote__content {
   position: relative;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
@@ -1456,7 +1476,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 @media only screen and (min-width: 800px) {
   .quote__content {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.3000em;
     /* 26px */
@@ -1481,7 +1501,7 @@ div.highlight > pre > code .il, code .highlight .il {
   content: open-quote;
   display: block;
   position: absolute;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 700;
   color: #f0f0f0;
   top: 90px;
@@ -1523,14 +1543,14 @@ div.highlight > pre > code .il, code .highlight .il {
 .article-nav-link::before {
   position: absolute;
   top: 21px;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
   font-weight: 400;
 }
 @media only screen and (min-width: 620px) {
   .article-nav-link::before {
     top: 25px;
-    font-size: 26px;
+    font-size: 30px;
     display: block;
     padding: 13px 10px;
     color: #ffffff;
@@ -1567,7 +1587,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .article-nav-count {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.3000em;
   /* 26px */
@@ -1577,8 +1597,8 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 @media only screen and (min-width: 800px) {
   .article-nav-count {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
-    font-size: 26px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
     font-weight: 300;
     line-height: 1.0000em;
     /* 26px */
@@ -1663,14 +1683,14 @@ div.highlight > pre > code .il, code .highlight .il {
   /* 26px */
   padding-top: 1.6250em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   padding-bottom: 13px;
   margin-bottom: 12px;
   border-bottom: 1px solid #e0e0e0;
 }
 @media only screen and (min-width: 800px) {
   .toc__title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.3000em;
     /* 26px */
@@ -1729,7 +1749,7 @@ div.highlight > pre > code .il, code .highlight .il {
 @media only screen and (min-width: 620px) {
   .next-lessons::before {
     content: attr(data-current-lesson);
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
@@ -1744,7 +1764,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 @media only screen and (min-width: 800px) {
   .next-lessons::before {
-    font-size: 20px;
+    font-size: 24px;
     padding-left: 15px;
     padding-right: 15px;
     top: 126px;
@@ -1899,9 +1919,9 @@ div.highlight > pre > code .il, code .highlight .il {
 .about__logo {
   float: right;
   background: url("../../images/KforC.svg") no-repeat center center;
-  height: 200px;
-  width: 200px;
-  background-size: 200px 200px;
+  height: 180px;
+  width: 180px;
+  background-size: 180px 180px;
 }
 
 footer {
@@ -2157,7 +2177,7 @@ h4 {
 @media only screen and (min-width: 800px) {
   .medium,
   h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.3000em;
     /* 26px */
@@ -2168,7 +2188,7 @@ h4 {
 
 .large,
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.3000em;
   /* 26px */
@@ -2178,8 +2198,8 @@ h3 {
 @media only screen and (min-width: 800px) {
   .large,
   h3 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
-    font-size: 26px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
     font-weight: 300;
     line-height: 1.0000em;
     /* 26px */
@@ -2190,8 +2210,8 @@ h3 {
 
 .xlarge,
 h2 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: 26px;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
   font-weight: 300;
   line-height: 1.0000em;
   /* 26px */
@@ -2201,7 +2221,7 @@ h2 {
 @media only screen and (min-width: 800px) {
   .xlarge,
   h2 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2381em;
@@ -2213,7 +2233,7 @@ h2 {
 
 .xxlarge,
 h1 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 42px;
   font-weight: 300;
   line-height: 1.2381em;
@@ -2224,7 +2244,7 @@ h1 {
 @media only screen and (min-width: 800px) {
   .xxlarge,
   h1 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -2235,7 +2255,7 @@ h1 {
 }
 
 .huge {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 68px;
   font-weight: 300;
   line-height: 1.1471em;
@@ -2245,7 +2265,7 @@ h1 {
 }
 @media only screen and (min-width: 800px) {
   .huge {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 110px;
     font-weight: 300;
     line-height: 1.19em;
@@ -2271,7 +2291,7 @@ li > p {
   margin-top: 13px;
   min-height: 26px;
   text-align: center;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
   outline: 0;
@@ -2386,7 +2406,7 @@ ul.list-links a::before {
 }
 ul.list-links.list-links--primary a {
   font-weight: 400;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   line-height: 1;
   text-decoration: none;
 }
@@ -2557,7 +2577,7 @@ ol.list-links.list-links--secondary a::before {
 
 /*==========  RELATED GUIDES LIST  ==========*/
 .related-guides-list {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   padding-top: 0;
   padding-left: 0;
 }
@@ -2666,7 +2686,7 @@ a:hover {
 }
 
 .cta--primary {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   color: #3372df;
   font-weight: 400;
   display: inline-block;
@@ -2686,7 +2706,7 @@ a:hover {
 }
 
 .cta--secondary {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   color: #3372df;
   font-weight: 400;
   display: inline-block;
@@ -2712,7 +2732,7 @@ table thead {
 table th {
   text-align: center;
   display: none;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
@@ -2721,7 +2741,7 @@ table th {
 }
 @media only screen and (min-width: 800px) {
   table th {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.3000em;
     /* 26px */
@@ -2754,7 +2774,7 @@ table td::before {
   bottom: 0;
   width: 100px;
   max-height: 100%;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding-left: 13px;
@@ -3087,12 +3107,12 @@ object {
   left: 0;
   text-align: center;
   color: #ffffff;
-  font-size: 26px;
+  font-size: 30px;
 }
 .icon-circle span,
 .icon-circle--large span {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: 26px;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
   font-weight: 700;
 }
 @media only screen and (min-width: 620px) {
@@ -3109,7 +3129,7 @@ object {
   position: relative;
 }
 .icon-circle--large i {
-  font-size: 26px;
+  font-size: 30px;
 }
 @media only screen and (min-width: 620px) {
   .icon-circle--large i {
@@ -3167,7 +3187,7 @@ object {
 }
 @media only screen and (min-width: 620px) {
   .icon-circle--nav i {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
 
@@ -3534,7 +3554,7 @@ object {
   /* 26px */
   padding-top: 2.0000em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;

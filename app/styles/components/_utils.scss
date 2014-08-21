@@ -20,6 +20,7 @@
   $wideColCount: 4 !default;
   $wideColWidth: 22.2% !default;
   $wideGutterWidth: 3.7% !default;
+  $smallGutterWidth: 15% !default;
 
   // Define margin
   $margin: 3em;
@@ -62,14 +63,14 @@
 
   // Defining font family
   $fontDefault: Helvetica, Arial, sans-serif !default;
-  $fontHighlight: "Roboto Condensed", Helvetica, sans-serif !default;
+  $fontHighlight: Helvetica, sans-serif !default;
   $fontIcon: "icons" !default;
 
   // Defining font sizes
   $fontSmall: 13px !default;
   $fontBase: 16px  !default;
-  $fontMedium: 20px !default;
-  $fontLarge: 26px !default;
+  $fontMedium: 24px !default;
+  $fontLarge: 30px !default;
   $fontXLarge: 42px !default;
   $fontXXLarge: 68px !default;
   $fontHuge: 110px !default;
