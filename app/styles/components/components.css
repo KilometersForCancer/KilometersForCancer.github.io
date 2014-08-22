@@ -1816,6 +1816,8 @@ div.highlight > pre > code .il, code .highlight .il {
   color: white;
   max-width: 88%;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .slides-navigation {
@@ -1833,11 +1835,11 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 .slides-navigation a.previous {
-  left: 10px;
+  left: 20px;
 }
 
 .slides-navigation a.next {
-  right: 10px;
+  right: 20px;
 }
 
 .logo {
@@ -1863,8 +1865,6 @@ div.highlight > pre > code .il, code .highlight .il {
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  height: 100%;
-  width: 100%;
 }
 .contact__map:before, .contact__map:after {
   content: '';
@@ -2129,6 +2129,7 @@ div.highlight > pre > code .il, code .highlight .il {
   height: 180px;
   width: 180px;
   background-size: 180px 180px;
+  margin-top: 10px;
 }
 
 footer {

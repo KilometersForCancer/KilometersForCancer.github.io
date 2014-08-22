@@ -25,6 +25,8 @@
     color: white;
     max-width: 88%;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .slides-navigation {
@@ -41,8 +43,8 @@
   color: white;
 }
 .slides-navigation a.previous {
-  left: 10px;
+  left: 20px;
 }
 .slides-navigation a.next {
-  right: 10px;
+  right: 20px;
 }

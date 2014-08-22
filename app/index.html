@@ -141,14 +141,24 @@
 
     <script type="text/javascript">
       function initialize() {
+        var latlng = new google.maps.LatLng(47.757589, -122.264148)
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
+          center: latlng,
+          zoom: 12
         };
         var map = new google.maps.Map(document.getElementById("map"),
             mapOptions);
+
+        setTimeout(function() {
+          var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            animation: google.maps.Animation.DROP
+          });
+        }, 1000);
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+
+        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
