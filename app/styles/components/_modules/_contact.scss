@@ -4,6 +4,11 @@
 *
 **/
 
+.contact__map {
+  @include col(1/2);
+
+}
+
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
 #mc_embed_signup form {
   @include col(1/2);
@@ -13,7 +18,7 @@
 #mc_embed_signup h2 {
   font-weight:bold;
   padding:0;
-  margin:15px 0;
+  margin-top:15px;
   font-size:1.4em;
 
 }
@@ -132,7 +137,7 @@
 }
 
 #mc_embed_signup .asterisk {
-  color:#c60;
+  color:$colorOrange;
   font-size:200%;
   top: 7px;
   position: relative;

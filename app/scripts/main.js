@@ -25,4 +25,8 @@ $(function() {
     hashchange: false
   });
 
+  $('.clock').flipcountdown({
+    size: 'md',
+    beforeDateTime: '9/28/2014 9:00:00'
+  });
 });

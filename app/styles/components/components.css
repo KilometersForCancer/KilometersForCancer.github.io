@@ -1853,6 +1853,28 @@ div.highlight > pre > code .il, code .highlight .il {
 * Contact styling
 *
 **/
+.contact__map {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.contact__map:before, .contact__map:after {
+  content: '';
+  display: table;
+}
+.contact__map:after {
+  clear: both;
+}
+.contact__map:last-child {
+  margin-right: 0%;
+}
+
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
 #mc_embed_signup form {
   *zoom: 1;
@@ -1880,7 +1902,7 @@ div.highlight > pre > code .il, code .highlight .il {
 #mc_embed_signup h2 {
   font-weight: bold;
   padding: 0;
-  margin: 15px 0;
+  margin-top: 15px;
   font-size: 1.4em;
 }
 
@@ -1999,7 +2021,7 @@ div.highlight > pre > code .il, code .highlight .il {
 }
 
 #mc_embed_signup .asterisk {
-  color: #c60;
+  color: #e7573a;
   font-size: 200%;
   top: 7px;
   position: relative;
@@ -2092,6 +2114,11 @@ div.highlight > pre > code .il, code .highlight .il {
   border: 1px solid #ccc;
   margin-right: .5em;
   font-weight: bold;
+}
+
+.about__content span {
+  display: block;
+  padding-top: 5%;
 }
 
 .about__logo {
