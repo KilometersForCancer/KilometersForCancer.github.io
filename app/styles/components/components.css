@@ -1863,6 +1863,8 @@ div.highlight > pre > code .il, code .highlight .il {
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
+  height: 100%;
+  width: 100%;
 }
 .contact__map:before, .contact__map:after {
   content: '';
@@ -2131,6 +2133,11 @@ div.highlight > pre > code .il, code .highlight .il {
 
 footer {
   margin-top: 8em;
+  text-align: center;
+}
+
+.countdown {
+  text-align: center;
 }
 
 /**
