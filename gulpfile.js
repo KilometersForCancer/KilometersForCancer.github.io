@@ -123,17 +123,16 @@ gulp.task('html', function () {
     // Remove Any Unused CSS
     // Note: If not using the Style Guide, you can delete it from
     // the next line to only include styles your project uses.
-    // .pipe($.if('*.css', $.uncss({
-    //   html: [
-    //     'app/index.html',
-    //     'app/styleguide/index.html'
-    //   ],
-    //   // CSS Selectors for UnCSS to ignore
-    //   ignore: [
-    //     '.navdrawer-container.open',
-    //     /.app-bar.open/
-    //   ]
-    // })))
+    .pipe($.if('*.css', $.uncss({
+      html: [
+        'app/index.html',
+        'app/styleguide/index.html'
+      ],
+      // CSS Selectors for UnCSS to ignore
+      ignore: [
+        /(\.xdsoft)/g
+      ]
+    })))
     // Concatenate And Minify Styles
     .pipe($.if('*.css', $.csso()))
     .pipe($.useref.restore())
