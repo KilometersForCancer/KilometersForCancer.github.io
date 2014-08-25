@@ -538,7 +538,7 @@ pre {
 * Contact styling
 *
 **/
-.contact__map {
+.contact__item {
   *zoom: 1;
   float: left;
   clear: none;
@@ -549,39 +549,20 @@ pre {
   margin-left: 0%;
   margin-right: 3%;
 }
-.contact__map:before, .contact__map:after {
+.contact__item:before, .contact__item:after {
   content: '';
   display: table;
 }
-.contact__map:after {
+.contact__item:after {
   clear: both;
 }
-.contact__map:last-child {
+.contact__item:last-child {
   margin-right: 0%;
 }
 
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
 #mc_embed_signup form {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 48.5%;
-  margin-left: 0%;
-  margin-right: 3%;
   text-align: left;
-}
-#mc_embed_signup form:before, #mc_embed_signup form:after {
-  content: '';
-  display: table;
-}
-#mc_embed_signup form:after {
-  clear: both;
-}
-#mc_embed_signup form:last-child {
-  margin-right: 0%;
 }
 
 #mc_embed_signup h2 {
@@ -801,6 +782,22 @@ pre {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 620px) {
+  .contact__item {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact__item:first-child {
+    margin-left: auto;
+  }
+  .contact__item:last-child {
+    margin-right: auto;
+  }
+}
 .about__content span {
   display: block;
   padding-top: 5%;
