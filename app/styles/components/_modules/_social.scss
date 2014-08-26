@@ -1,0 +1,27 @@
+
+#social {
+  text-align: center;
+
+  ul {
+    display: inline-block;
+    padding-left: 0;
+    padding-top: 8px;
+    margin: 0;
+
+    li {
+      list-style: none;
+      float: left;
+      margin: 5px;
+
+      a {
+        &:visited {
+          color: $colorBlack;
+        }
+
+        &:hover, &:active, &:focus {
+          color: $colorGray;
+        }
+      }
+    }
+  }
+}

@@ -494,20 +494,25 @@ pre {
   z-index: 3;
   width: 100%;
 }
-.slides--text h1 {
+.slides--text .slides--wrap {
+  min-width: 50%;
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: #222222;
+  border-radius: 0.3em;
+  opacity: 0.6;
+}
+.slides--text .slides--wrap h1 {
   text-align: center;
   color: white;
-  max-width: 88%;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0;
 }
 
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
   z-index: 3;
-  top: 48.5%;
+  top: 46%;
   width: 100%;
 }
 
@@ -591,10 +596,10 @@ pre {
 
 #mc_embed_signup .button, #mc_embed_signup .button--primary, #mc_embed_signup .button--secondary, #mc_embed_signup .button--secondary-variation {
   clear: both;
-  background-color: #aaa;
+  background-color: #222222;
   border: 0 none;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -610,7 +615,7 @@ pre {
   width: auto;
 }
 #mc_embed_signup .button:hover, #mc_embed_signup .button--primary:hover, #mc_embed_signup .button--secondary:hover, #mc_embed_signup .button--secondary-variation:hover {
-  background-color: #777;
+  background-color: #737373;
 }
 
 #mc_embed_signup .small-meta {
@@ -813,12 +818,32 @@ pre {
 }
 
 footer {
-  margin-top: 8em;
   text-align: center;
 }
 
 .countdown {
   text-align: center;
+}
+
+#social {
+  text-align: center;
+}
+#social ul {
+  display: inline-block;
+  padding-left: 0;
+  padding-top: 8px;
+  margin: 0;
+}
+#social ul li {
+  list-style: none;
+  float: left;
+  margin: 5px;
+}
+#social ul li a:visited {
+  color: #222222;
+}
+#social ul li a:hover, #social ul li a:active, #social ul li a:focus {
+  color: #737373;
 }
 
 @font-face {

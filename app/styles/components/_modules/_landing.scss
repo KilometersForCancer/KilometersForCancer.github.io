@@ -4,14 +4,8 @@
 *
 **/
 
-#landing {
-  // @include cf();
-  // height: 100%;
-}
-
 #slides {
   @include cf();
-  // @include center;
 }
 
 .slides--text {
@@ -20,20 +14,27 @@
   z-index: 3;
   width: 100%;
 
-  h1 {
-    text-align: center;
-    color: white;
-    max-width: 88%;
+  .slides--wrap {
+    min-width: 50%;
+    max-width: 75%;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: $colorBlack;
+    border-radius: 0.3em;
+    opacity: 0.6;
+
+    h1 {
+      text-align: center;
+      color: white;
+      padding: 0;
+    }
   }
 }
+
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
   z-index: 3;
-  top: 48.5%;
+  top: 46%;
   width: 100%;
 }
 .slides-navigation a {
