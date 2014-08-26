@@ -825,6 +825,10 @@ footer {
   text-align: center;
 }
 
+.clock {
+  margin-top: 20px;
+}
+
 #social {
   text-align: center;
 }
