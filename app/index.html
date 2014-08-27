@@ -36,24 +36,24 @@
   <body>
     <div id="slides">
       <div class="slides--text">
-        <div class="slides--wrap">
-          <h1>Kilometers For Cancer</h1>
+        <div class="slides__logo">
         </div>
+        <h1>Kilometers For Cancer</h1>
       </div>
 
       <!-- Needed for superslides -->
       <div class="slides-container">
-        <img src="../../images/group.jpg">
-        <img src="../../images/boy.jpg">
-        <img src="../../images/runner.jpg">
+        <div class="slides-group" src="../../images/group.jpg"></div>
+        <div class="slides-boy" src="../../images/boy.jpg"></div>
+        <div class="slides-runner" src="../../images/runner.jpg"></div>
 
       </div>
 
-      <!-- Needed for superslides -->
-      <nav class="slides-navigation">
+      <!-- Needed for superslides navigation -->
+      <!-- <nav class="slides-navigation">
         <a href="#" class="next"><i class="fa fa-3x fa-angle-right"></i></a>
         <a href="#" class="previous"><i class="fa fa-3x fa-angle-left"></i></a>
-      </nav>
+      </nav> -->
     </div>
 
     <div class="countdown">
@@ -128,7 +128,7 @@
       <ul class="list-inline">
         <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-      </ul>
+      </ulx
     </div>
     <footer>
       <span>&copy; 2014</span>
@@ -155,10 +155,20 @@
 
     <script type="text/javascript">
       function initialize() {
-        var latlng = new google.maps.LatLng(47.757589, -122.264148)
+        var styleOptions = [
+                            {"featureType":"water","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]},{"featureType":"landscape","stylers":[{"color":"#f2e5d4"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},
+                            {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},
+                            {"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road",
+                             "stylers":[{"lightness":20}]}
+                           ]
+
+        var latlng = new google.maps.LatLng(47.757589, -122.264148);
+
         var mapOptions = {
           center: latlng,
-          zoom: 12
+          zoom: 12,
+          mapTYpeId: google.maps.MapTypeId.ROADMAP,
+          styles: styleOptions
         };
         var map = new google.maps.Map(document.getElementById("map"),
             mapOptions);

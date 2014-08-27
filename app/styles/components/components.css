@@ -487,25 +487,35 @@ pre {
 }
 
 .slides--text {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   position: absolute;
   z-index: 3;
   width: 100%;
-}
-.slides--text .slides--wrap {
-  min-width: 50%;
-  max-width: 75%;
-  margin: 0 auto;
+  left: 0;
   background-color: #222222;
-  border-radius: 0.3em;
   opacity: 0.6;
 }
-.slides--text .slides--wrap h1 {
-  text-align: center;
+.slides--text h1 {
   color: white;
   padding: 0;
+}
+
+.slides__logo {
+  float: left;
+  background: url("../../images/KforC.svg") no-repeat center center;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+  margin: 10px;
+}
+
+.slides-container .slides-group {
+  background: url("../../images/group.jpg") no-repeat fixed center center/cover transparent;
+}
+.slides-container .slides-boy {
+  background: url("../../images/boy.jpg") no-repeat fixed center center/cover transparent;
+}
+.slides-container .slides-runner {
+  background: url("../../images/runner.jpg") no-repeat fixed center center/cover transparent;
 }
 
 .slides-navigation {

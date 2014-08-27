@@ -9,27 +9,56 @@
 }
 
 .slides--text {
-  @include vert-align();
   position: absolute;
   z-index: 3;
   width: 100%;
+  left: 0;
+  background-color: $colorBlack;
+  opacity: 0.6;
 
-  .slides--wrap {
-    min-width: 50%;
-    max-width: 75%;
-    margin: 0 auto;
-    background-color: $colorBlack;
-    border-radius: 0.3em;
-    opacity: 0.6;
-
-    h1 {
-      text-align: center;
-      color: white;
-      padding: 0;
-    }
+  h1 {
+    color: white;
+    padding: 0;
   }
 }
 
+.slides__logo {
+  float: left;
+  background: url('../../images/KforC.svg') no-repeat center center;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+  margin: 10px;
+}
+
+.slides-container {
+  .slides-group {
+    background: url("../../images/group.jpg")
+                no-repeat
+                fixed
+                center
+                center / cover
+                transparent;
+  }
+
+  .slides-boy {
+    background: url("../../images/boy.jpg")
+                no-repeat
+                fixed
+                center
+                center / cover
+                transparent;
+  }
+
+  .slides-runner {
+    background: url("../../images/runner.jpg") 
+                no-repeat
+                fixed
+                center
+                center / cover
+                transparent;
+  }
+}
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
