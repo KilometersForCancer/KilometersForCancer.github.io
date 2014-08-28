@@ -475,37 +475,36 @@ pre {
 *  Carousel
 *
 **/
-#slides {
-  *zoom: 1;
-}
-#slides:before, #slides:after {
-  content: '';
-  display: table;
-}
-#slides:after {
-  clear: both;
-}
-
 .slides--text {
   position: absolute;
   z-index: 3;
   width: 100%;
   left: 0;
+  top: 0;
   background-color: #222222;
   opacity: 0.6;
 }
 .slides--text h1 {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  position: relative;
   color: white;
-  padding: 0;
+  font-size: 2.2em;
+  display: inline-block;
+  text-align: center;
+}
+
+.slides--wrap {
+  display: inline-block;
 }
 
 .slides__logo {
-  float: left;
   background: url("../../images/KforC.svg") no-repeat center center;
   height: 100px;
   width: 100px;
   background-size: 100px 100px;
-  margin: 10px;
+  margin: 0 5px 5px 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .slides-container .slides-group {
@@ -540,6 +539,16 @@ pre {
   right: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+  .slides--text h1 {
+    display: none;
+  }
+
+  .slides--wrap {
+    width: 100%;
+    text-align: center;
+  }
+}
 .logo {
   display: inline-block;
   background: url("../../images/KforC.svg") no-repeat center center;
@@ -840,7 +849,7 @@ footer {
 }
 
 #social {
-  text-align: center;
+  text-align: left;
 }
 #social ul {
   display: inline-block;
@@ -851,13 +860,30 @@ footer {
 #social ul li {
   list-style: none;
   float: left;
-  margin: 5px;
+  margin-right: 20px;
+}
+#social ul li:first-child {
+  margin-left: 10px;
 }
 #social ul li a:visited {
   color: #222222;
 }
 #social ul li a:hover, #social ul li a:active, #social ul li a:focus {
   color: #737373;
+}
+
+#sponsors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#sponsors ul li {
+  list-style: none;
+  float: right;
+  margin: 10px 10px 20px;
+}
+#sponsors ul li:nth-child(2) {
+  float: left;
 }
 
 @font-face {

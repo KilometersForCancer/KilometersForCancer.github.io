@@ -1,6 +1,6 @@
 
 #social {
-  text-align: center;
+  text-align: left;
 
   ul {
     display: inline-block;
@@ -11,7 +11,11 @@
     li {
       list-style: none;
       float: left;
-      margin: 5px;
+      margin-right: 20px;
+
+      &:first-child {
+        margin-left: 10px;
+      }
 
       a {
         &:visited {

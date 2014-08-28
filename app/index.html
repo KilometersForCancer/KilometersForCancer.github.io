@@ -24,7 +24,8 @@
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
-
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- build:css styles/components/main.min.css -->
     <link rel="stylesheet" href="styles/h5bp.css">
@@ -36,9 +37,12 @@
   <body>
     <div id="slides">
       <div class="slides--text">
-        <div class="slides__logo">
+        <div class="slides--wrap">
+          <div class="slides__logo">
         </div>
-        <h1>Kilometers For Cancer</h1>
+        </div>
+        <h1>
+          KILOMETERS FOR CANCER</h1>
       </div>
 
       <!-- Needed for superslides -->
@@ -76,7 +80,19 @@
     </div>
 
     <div id="sponsors" class="col margin">
-      <span>Lets talk about sponsors and stuff</span>
+      <ul>
+        <li>
+          <img src="../../../images/halverson.jpg">
+        </li>
+
+        <li>
+          <img src="../../../images/heir.jpg">
+        </li>
+
+        <li>
+          <img src="../../../images/lymphoma.jpg">
+        </li>
+      </ul>
     </div>
 
     <div id="finish">
@@ -84,6 +100,11 @@
     </div>
 
     <div id="contact" class="col margin">
+      <section class="contact__item">
+        <div id="map">
+        </div>
+      </section>
+
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup" class="contact__item">
         <form action="//KilometersforCancer.us7.list-manage.com/subscribe/post?u=15f45b726e60e54e882a1187d&amp;id=f0258e4eb5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -116,19 +137,16 @@
               <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </form>
       </div>
-
-      <section class="contact__item">
-        <div id="map">
-        </div>
-      </section>
     </div>
 
     <div id="social" class="col margin">
-      <h3>Follow us!</h3>
+      <div>
+      <h3>Get in touch!</h3>
       <ul class="list-inline">
         <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-      </ulx
+      </ul>
+    </div>
     </div>
     <footer>
       <span>&copy; 2014</span>
@@ -156,11 +174,109 @@
     <script type="text/javascript">
       function initialize() {
         var styleOptions = [
-                            {"featureType":"water","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]},{"featureType":"landscape","stylers":[{"color":"#f2e5d4"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},
-                            {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},
-                            {"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road",
-                             "stylers":[{"lightness":20}]}
-                           ]
+            {
+                "featureType": "landscape",
+                "stylers": [
+                    {
+                        "hue": "#FFA800"
+                    },
+                    {
+                        "saturation": 0
+                    },
+                    {
+                        "lightness": 0
+                    },
+                    {
+                        "gamma": 1
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "stylers": [
+                    {
+                        "hue": "#53FF00"
+                    },
+                    {
+                        "saturation": -73
+                    },
+                    {
+                        "lightness": 40
+                    },
+                    {
+                        "gamma": 1
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "stylers": [
+                    {
+                        "hue": "#FBFF00"
+                    },
+                    {
+                        "saturation": 0
+                    },
+                    {
+                        "lightness": 0
+                    },
+                    {
+                        "gamma": 1
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "stylers": [
+                    {
+                        "hue": "#00FFFD"
+                    },
+                    {
+                        "saturation": 0
+                    },
+                    {
+                        "lightness": 30
+                    },
+                    {
+                        "gamma": 1
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "stylers": [
+                    {
+                        "hue": "#00BFFF"
+                    },
+                    {
+                        "saturation": 6
+                    },
+                    {
+                        "lightness": 8
+                    },
+                    {
+                        "gamma": 1
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "stylers": [
+                    {
+                        "hue": "#679714"
+                    },
+                    {
+                        "saturation": 33.4
+                    },
+                    {
+                        "lightness": -25.4
+                    },
+                    {
+                        "gamma": 1
+                    }
+                ]
+            }
+        ]
 
         var latlng = new google.maps.LatLng(47.757589, -122.264148);
 

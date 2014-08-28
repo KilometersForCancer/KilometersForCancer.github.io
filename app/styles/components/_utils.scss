@@ -94,7 +94,7 @@
 
 /*==========  MIXINS  ==========*/
 
-  @mixin vert-align() {
+  %vert-align {
     top: 50%;
     transform: translateY(-50%);
   }
