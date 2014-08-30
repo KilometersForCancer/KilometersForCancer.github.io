@@ -491,6 +491,9 @@ pre {
   font-size: 2.2em;
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
+  padding-top: 0;
+  margin-bottom: 7px;
 }
 
 .slides--wrap {
@@ -541,12 +544,14 @@ pre {
 
 @media only screen and (max-width: 800px) {
   .slides--text h1 {
-    display: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .slides--wrap {
-    width: 100%;
-    text-align: center;
+    display: none;
   }
 }
 .logo {
