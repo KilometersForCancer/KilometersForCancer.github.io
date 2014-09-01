@@ -849,6 +849,12 @@ footer {
 .countdown {
   text-align: center;
 }
+.countdown h2 a {
+  color: #222;
+}
+.countdown h2 a a:visited {
+  color: #222;
+}
 
 .clock {
   margin-top: 20px;
