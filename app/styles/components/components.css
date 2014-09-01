@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 *
 * Main Stylesheet For Visual Style Guide
@@ -481,7 +482,7 @@ pre {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #222222;
+  background-color: #222;
   opacity: 0.6;
 }
 .slides--text h1 {
@@ -620,10 +621,10 @@ pre {
 
 #mc_embed_signup .button, #mc_embed_signup .button--primary, #mc_embed_signup .button--secondary, #mc_embed_signup .button--secondary-variation {
   clear: both;
-  background-color: #222222;
+  background-color: #222;
   border: 0 none;
   border-radius: 4px;
-  color: white;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -716,7 +717,7 @@ pre {
 }
 
 #mc_embed_signup .asterisk {
-  color: #e7573a;
+  color: #E7573A;
   font-size: 200%;
   top: 7px;
   position: relative;
@@ -870,8 +871,11 @@ footer {
 #social ul li:first-child {
   margin-left: 10px;
 }
+#social ul li a {
+  color: #222;
+}
 #social ul li a:visited {
-  color: #222222;
+  color: #222;
 }
 #social ul li a:hover, #social ul li a:active, #social ul li a:focus {
   color: #737373;
@@ -1179,18 +1183,18 @@ li > p {
 
 .button--primary {
   background: #4285f4;
-  color: white;
+  color: #ffffff;
   border: 1px solid #1266f1;
 }
 
 .button--secondary {
-  background: white;
+  background: #ffffff;
   color: #3372df;
   border: 1px solid #e6e6e6;
 }
 
 .button--secondary-variation {
-  background: white;
+  background: #ffffff;
   color: #3372df;
   border: 1px solid #e6e6e6;
   border-color: transparent;
@@ -1226,7 +1230,7 @@ a:hover {
   font-family: "icons";
   line-height: 25px;
   font-size: 13px;
-  content: "\e005";
+  content: "";
 }
 
 .cta--secondary {
