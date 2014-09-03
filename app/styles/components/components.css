@@ -514,11 +514,28 @@ pre {
 .slides-container .slides-group {
   background: url("../../images/group.jpg") no-repeat fixed center center/cover transparent;
 }
+@media (max-width: 620px) {
+  .slides-container .slides-group {
+    background-attachment: scroll;
+  }
+}
 .slides-container .slides-boy {
   background: url("../../images/boy.jpg") no-repeat fixed center center/cover transparent;
 }
+@media (max-width: 620px) {
+  .slides-container .slides-boy {
+    background-attachment: scroll;
+  }
+}
 .slides-container .slides-runner {
+  height: 100%;
+  overflow: hidden;
   background: url("../../images/runner.jpg") no-repeat fixed center center/cover transparent;
+}
+@media (max-width: 620px) {
+  .slides-container .slides-runner {
+    background-attachment: scroll;
+  }
 }
 
 .slides-navigation {
@@ -846,6 +863,11 @@ footer {
   text-align: left;
   margin-top: 2em;
 }
+@media (max-width: 620px) {
+  footer {
+    text-align: center;
+  }
+}
 
 .countdown {
   text-align: center;
@@ -886,6 +908,11 @@ footer {
 }
 #social ul li a:hover, #social ul li a:active, #social ul li a:focus {
   color: #737373;
+}
+@media (max-width: 620px) {
+  #social {
+    text-align: center;
+  }
 }
 
 #sponsors ul {

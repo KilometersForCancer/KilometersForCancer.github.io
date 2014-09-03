@@ -40,6 +40,8 @@
   vertical-align: middle;
 }
 
+#slides {
+}
 .slides-container {
   .slides-group {
     background: url("../../images/group.jpg")
@@ -48,6 +50,10 @@
                 center
                 center / cover
                 transparent;
+
+    @media (max-width: $medium) {
+      background-attachment: scroll;
+    }
   }
 
   .slides-boy {
@@ -57,15 +63,25 @@
                 center
                 center / cover
                 transparent;
+
+    @media (max-width: $medium) {
+      background-attachment: scroll;
+    }
   }
 
   .slides-runner {
+    height: 100%;
+    overflow: hidden;
     background: url("../../images/runner.jpg")
                 no-repeat
                 fixed
                 center
                 center / cover
                 transparent;
+
+    @media (max-width: $medium) {
+      background-attachment: scroll;
+    }
   }
 }
 .slides-navigation {

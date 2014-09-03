@@ -29,4 +29,8 @@
       }
     }
   }
+
+  @media (max-width: $medium) {
+    text-align: center;
+  }
 }
