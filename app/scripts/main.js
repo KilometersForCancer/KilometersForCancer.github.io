@@ -23,8 +23,8 @@ $(function() {
     play: 5000,
     animation: 'fade',
     hashchange: false,
-    min_height: 300,
-    min_width: 300
+    min_height: 800,
+    min_width: 800
   });
 
   $('.clock').flipcountdown({
