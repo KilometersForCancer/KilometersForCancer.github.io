@@ -22,7 +22,9 @@ $(function() {
   $('#slides').superslides({
     play: 5000,
     animation: 'fade',
-    hashchange: false
+    hashchange: false,
+    min_height: 300,
+    min_width: 300
   });
 
   $('.clock').flipcountdown({
